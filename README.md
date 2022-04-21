@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# mongodb-user-get-post-update-delete-client-side
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Available Steps
+ * 1. Create a node server with 5 steps
+ * 1.1. create folder
+ * 1.2. npm init
+ * 1.3. npm i express cors mongodb
+ * 1.4. script-dev: nodemon index.js
+ * 1.5. create index.js
+ * 1.6. use 5 steps to create a node server
+ * 
+ * -------------------
+ * Create Atlas Account
+ * -------------------
+ * 1. sign up. google access
+ * 2. create cluster
+ * 3. Create user dbUser and password
+ * 4. Network Access --> ip address: allow all 
+ * 5. database > Connect > code copy paste in index.js
+ * ---------------------
+ * CRUD Operation
+ * -------------------
+ * 1. node mongodb CRUD > Fundamentals
+ * 2. create async run function
+ * ---------------------------------------------
+ * Integrate sending data from client to server
+ * ----------------------------------------------
+ * 1. Client side: create form
+ * 2. on submit get form data and create user object
+ * 3. on Server: Create user POST method to receive data on the backend 
+ * 4. on client side: set fetch with POST, headers, body
+ * 5. Make sure you return a json from the POST API
+ * ---------------------------
+ * LOAD Data to the client side
+ * -------------------------------
+ * 1. create get API on the server
+ * 2. create a query object
+ * 3. collection.find (query)
+ * 4. cursor.toArray()
+ * 5. return the result
+ * 6. from client useEffect and display like you have done before
+ * ---------------------------
+ * DELETE
+ * ---------------------------
